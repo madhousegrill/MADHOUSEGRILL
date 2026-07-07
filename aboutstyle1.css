@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    padding: 15px 20px;
+    background-color: #ede8e0;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: Georgia, serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.nav-links .active {
+    color: #d45d3c;
+}
+
+
+/* ABOUT PAGE */
+.about-page {
+    padding: 100px 20px;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 34px;
+    font-family: Georgia, serif;
+    color: #1a1a1a;
+}
+
+.about-header p {
+    color: #6b7280;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* BIO CARD */
+.bio-card {
+    display: flex;
+    gap: 15px;
+    background: #f3efe5;
+    padding: 20px;
+    border-left: 5px solid #c75b3c;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.bio-icon {
+    font-size: 26px;
+}
+
+.biotext {
+    font-family: 'Playfair Display', Georgia, serif;
+
+}
+
+.bio-content h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 8px;
+}
+
+.bio-note {
+    font-style: italic;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* PHILOSOPHY */
+.philosophy h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    margin-bottom: 25px;
+}
+
+.philo-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.philo-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.philo-card .icon {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* PROCESS */
+.process {
+    padding: 10px 0px 1px 10px;
+    width: 100%;
+    background-color: #ede8e0;
+    margin-top: 50px;
+}
+
+.process h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    margin-bottom: 25px;
+}
+
+.step {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    background-color: #ede8e0;
+
+}
+
+.circle {
+    min-width: 40px;
+    height: 40px;
+    background: #c75b3c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+footer {
+    background: #0f1b2a;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.footerfoot{
+    text-align: left;
+}
+
+.instalink{
+  text-decoration: underline;
+  color: white;
+}
+
+.cc{
+    font-weight: 500;
+    text-align: center;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+
+    .about-header h1 {
+        font-size: 48px;
+    }
+
+    .philo-cards {
+        flex-direction: row;
+    }
+
+    .bio-card {
+        max-width: 900px;
+        margin: auto auto 50px;
+    }
+
+    .process {
+        max-width: 900px;
+        margin: 50px auto;
+    }
+}

@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  
+}
+
+body {
+  background: #ede8e0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  padding: 15px 20px;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: Georgia, serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.nav-links .active {
+  color: #d45d3c;
+}
+
+.gallery-header {
+  text-align: center;
+  padding: 150px 20px;
+  background-color: #ede8e0;
+}
+
+.gallery-header h1 {
+  font-size: 40px;
+  font-family: Georgia, serif;
+}
+
+.gallery-header p {
+  color: #666;
+  margin-top: 10px;
+}
+
+/* GALLERY SECTION */
+.gallery {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CARD */
+.gallery-card {
+  background: #fff;
+  border:solid #d45d3c 1px;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+/* IMAGE */
+.image-wrapper {
+  height: 320px;
+  padding: 20px 0px 0px 20px;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8); */
+
+}
+
+.image-wrapper img {
+  width: 95%;
+  height: 250px;
+  display: block;
+  transition: transform 0.4s ease;
+  overflow: visible;
+  /* border: solid black 2px; */
+  border-radius: 25px;
+  box-shadow: 0 0px 25px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* FEATURED TAG */
+.tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #c75b3c;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* CONTENT */
+.card-content {
+  padding: 18px;
+}
+
+.card-content h3 {
+  /* margin-top: 10px; */
+  font-family: Georgia, serif;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.meta {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.link {
+  color: #c75b3c;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* 🔥 HOVER EFFECT (DESKTOP) */
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+
+
+
+footer {
+    background: #0f1b2a;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.footerfoot{
+    text-align: left;
+}
+
+.instalink{
+  text-decoration: underline;
+  color: white;
+}
+
+.cc{
+    font-weight: 500;
+    text-align: center;
+}
+
+/* DESKTOP GRID */
+@media (min-width: 768px) {
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-card {
+    width: 30%;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sudhir Chada</title>
+    <link rel="stylesheet" href="gallerystyle1.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">Sudhir Chada</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about1.html" class="active">About</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </div>
+
+    <section class="gallery-header">
+        <h1>Gallery</h1>
+        <p>
+            Explore the complete collection of watercolor paintings, architectural studies,
+            and artistic expressions.
+        </p>
+    </section>
+
+    <section class="gallery" id="gallery">
+
+
+    </section>
+
+
+    <script>
+
+        const artworks = [
+
+            {
+                img: "1.jpeg",
+                title: "Harbor of Timeless Stories",
+                desc: "A rustic town rests along the waterfront, its aged buildings and narrow pathways echoing stories of the past. The warm earthy tones and subtle human presence bring life to the scene, while the quiet harbor reflects a world where history and everyday life blend seamlessly."
+            },
+
+            {
+                img: "2.jpeg",
+                title: "Colors by the Riverside",
+                desc: "A charming riverside village bursts with soft pastel hues, capturing the beauty of simplicity. The calm waters, docked boats, and cozy homes create a dreamy setting, evoking feelings of nostalgia and warmth—as if time slows down in this peaceful corner of the world."
+            },
+
+            {
+                img: "3.jpeg",
+                title: "Golden Reflections at Dusk",
+                desc: "As the sun dips behind the hills, a row of boats rests gently on shimmering waters. The golden light dances across the surface, blending with cool blues to create a mesmerizing contrast. This piece captures the quiet magic of dusk, where the day ends in perfect harmony."
+            },
+
+            {
+                img: "4.jpeg",
+                title: "Whispers of the Quiet Lake",
+                desc: "A serene landscape where still waters mirror the soft hues of nature, this painting captures a moment untouched by time. The gentle ripples, distant swans, and fading autumn tones create a calming atmosphere, inviting the viewer into a peaceful escape where silence speaks louder than sound."
+            },
+
+            {
+                img: "5.jpeg",
+                title: "Framed Riverside Watercolor",
+                desc: "The warm earthy tones, delicate brushwork, and elegant wooden frame make this piece an ideal choice for home, office, or gallery décor, adding timeless charm and a sense of peaceful countryside living.A lively waterfront town stands mirrored in the tranquil water below, blurring the line between reality and reflection. The vibrant boats and detailed architecture bring energy to the scene, while the soft sky and distant greenery balance it with calmness, creating a perfect harmony of motion and stillness."
+            },
+
+            {
+                img: "6.jpeg",
+                title: "Radiance Across the Waters",
+                desc: "Bated in the gentle glow of sunlight, Radiance Across the Waters captures the tranquil beauty of a peaceful coastal landscape. Soft reflections shimmer across the emerald waters as distant shores and graceful sailboats create a harmonious composition. Through delicate watercolor techniques and luminous tones, the artwork evokes a sense of serenity, inviting viewers to pause and experience the quiet elegance of nature"
+
+            },
+
+        
+            {
+                img: "7.jpeg",
+                title: "Whispers of the Countryside",
+                desc: "This watercolor composition portrays the enduring charm of a peaceful countryside settlement surrounded by flourishing trees. Rich textures and subtle color transitions breathe life into the traditional architecture, inviting viewers to experience the warmth, simplicity, and cultural heritage of rural living."
+            },
+
+            {
+                img: "8.jpeg",
+                title: "Echoes Along the Old Street",
+                desc: "This watercolor painting portrays the timeless charm of a historic European lane, where traditional buildings and architectural details reflect centuries of history. Soft washes, expressive lines, and warm earthy tones create a welcoming atmosphere, inviting viewers to wander through a place where every corner tells a story."
+            },
+
+
+            {
+                img: "9.jpeg",
+                title: "Harbor of Quiet Reflections",
+                desc: "Harbor of Quiet Reflections captures the tranquil charm of a picturesque waterfront village where colorful homes, gently moored boats, and calm waters come together in perfect harmony. Delicate watercolor washes and expressive brushwork bring depth and atmosphere to the scene, while the soft interplay of light and sky evokes a sense of peace and timeless beauty. The composition reflects the artist's appreciation for landscapes that celebrate both nature and everyday life."
+            },
+
+
+            {
+                img: "10.jpeg",
+                title: "Reflections in the Rain",
+                desc: "Reflections in the Rain captures the quiet elegance of a historic city transformed by a passing shower. Grand architectural facades emerge through a soft veil of rain while shimmering reflections dance across the wet streets. The subtle movement of pedestrians beneath umbrellas and the expressive watercolor technique create a scene rich in atmosphere, inviting viewers to experience the timeless beauty found in ordinary moments."
+            },
+
+
+            {
+                img: "11.jpeg",
+                title: "Rain-Kissed Promenade",
+                desc: "Rain-Kissed Promenade beautifully portrays the tranquil elegance of a historic waterfront after a passing rain. Reflective pathways, graceful architecture, and the calm expanse of water are brought to life through expressive watercolor techniques and soft atmospheric washes. The composition captures the harmony between urban heritage and nature, offering a contemplative glimpse into the quiet beauty of a city where history, light, and reflection converge"
+            },
+
+
+            {
+                img: "12.jpeg",
+                title: "Golden Street Memory",
+                desc: "Golden Street Memory captures the enduring charm of a historic European avenue illuminated by the warmth of late afternoon light. Weathered facades, graceful archways, and the quiet presence of a horse-drawn carriage transport viewers to a bygone era where history lingers in every stone. Through expressive watercolor techniques and rich earthy tones, the artwork celebrates the timeless beauty of architectural heritage and the quiet poetry of old-world streets."
+            },
+
+
+            {
+                img: "13.jpeg",
+                title: "Harbor of Timeless Stories",
+                desc: "Harbor of Timeless Stories captures the enduring charm of a historic waterfront where architecture, quiet streets, and calm waters come together in perfect harmony. Rendered in expressive watercolor, the painting celebrates the beauty of heritage buildings overlooking a peaceful harbor, while subtle reflections and muted tones evoke a sense of nostalgia. The composition invites viewers to pause and appreciate the timeless relationship between the city and the sea."
+            },
+
+
+            {
+                img: "14.jpeg",
+                title: "Harbor of Heritage",
+                desc: "Harbor of Heritage beautifully captures the timeless character of a historic waterfront, where elegant architecture, quiet promenades, and tranquil waters exist in perfect harmony. Expressive watercolor washes and a restrained earthy palette highlight the textures and atmosphere of the scene, while the lone sailboat adds a subtle sense of life and movement. The painting reflects the enduring relationship between architecture, history, and the sea, inviting viewers to experience the quiet beauty of a place preserved through time."
+            },
+
+
+            {
+                img: "15.jpeg",
+                title: "Harbor of Reflections",
+                desc: "A lively waterfront town stands mirrored in the tranquil water below, blurring the line between reality and reflection. The vibrant boats and detailed architecture bring energy to the scene, while the soft sky and distant greenery balance it with calmness, creating a perfect harmony of motion and stillness."
+            },
+
+
+            {
+                img: "16.jpeg",
+                title: "Masts of the Old Harbor",
+                desc: "Masts of the Old Harbor celebrates the quiet elegance of a historic marina where towering sailboat masts rise gracefully against a soft sky. Delicate watercolor washes and shimmering reflections create a timeless maritime atmosphere, inviting viewers to experience the peaceful rhythm and enduring charm of life along the waterfront."
+            },
+
+
+            {
+                img: "17.jpeg",
+                title: "vHarbor at First Light",
+                desc: "Harbor at First Light captures a tranquil marina awakening beneath the glow of the rising sun. Gentle reflections ripple across the water while anchored boats rest in quiet harmony, creating a composition that conveys optimism, serenity, and the timeless beauty of coastal mornings."
+            },
+
+
+            {
+                img: "18.jpeg",
+                title: "Harbor Reflections",
+                desc: "Harbor Reflections portrays a peaceful waterfront village where traditional homes and sailboats are mirrored in calm waters. Soft watercolor textures and muted tones create a dreamlike atmosphere, celebrating the quiet relationship between architecture, nature, and the sea."
+            },
+
+
+            {
+                img: "19.jpeg",
+                title: "Fisherman's Return",
+                desc: "Fisherman's Return presents a lively fishing harbor where colorful boats and working vessels gather at the edge of calm waters. Expressive brushwork and vibrant accents capture the spirit of everyday coastal life while reflecting the enduring bond between people and the sea."
+            },
+
+
+            {
+                img: "20.jpeg",
+                title: "Harbor After Dusk",
+                desc: "Harbor After Dusk captures the peaceful silence of a marina beneath a dramatic evening sky. The gentle reflections of sailboats and waterfront buildings shimmer across the still water, creating a scene filled with calm, elegance, and timeless coastal charm."
+            },
+
+
+            {
+                img: "21.jpeg",
+                title: "Evening Over the Canal",
+                desc: "Evening Over the Canal depicts a historic waterfront illuminated by warm lights beneath an expansive twilight sky. Rich contrasts and glowing reflections transform the quiet canal into a scene of mystery and romance, celebrating the enduring beauty of historic European waterways"
+            },
+
+
+            {
+                img: "22.jpeg",
+                title: "Harbor of Crimson Reflections",
+                desc: "Harbor of Crimson Reflections showcases a picturesque waterfront where charming buildings overlook colorful boats resting upon reflective waters. The harmonious balance of architecture, light, and gentle reflections creates a peaceful composition that evokes the timeless character of a historic harbor."
+            },
+
+
+            {
+                img: "23.jpeg",
+                title: "Path to Tranquility",
+                desc: "Path to Tranquility invites viewers into a peaceful woodland opening where a winding path leads toward distant waters bathed in soft golden light. Rich greens and delicate watercolor textures create a calming atmosphere, celebrating the quiet beauty and restorative spirit of nature."
+            },
+
+
+            {
+                img: "24.jpeg",
+                title: "Harbor of Endless Horizons",
+                desc: "Harbor of Endless Horizons portrays a bustling marina filled with graceful fishing vessels resting beneath an open sky. Expressive watercolor strokes and luminous reflections capture the energy of maritime life while preserving the serenity that defines the coastal landscape."
+            },
+
+
+            {
+                img: "25.jpeg",
+                title: "Sunset Gondolas",
+                desc: "Sunset Gondolas captures the timeless elegance of gondolas gently swaying upon glowing waters as the evening sky is painted in brilliant shades of gold and amber. The harmonious balance of light, reflections, and distant architecture creates a romantic tribute to the enduring beauty of Venice."
+            },
+
+
+            {
+                img: "26.jpeg",
+                title: "Streets of the Old Quarter",
+                desc: "Streets of the Old Quarter presents a charming European village where historic rooftops, winding pathways, and graceful architecture blend into a scene rich with character. Soft watercolor tones and expressive brushwork evoke a sense of nostalgia, inviting viewers to wander through its timeless streets."
+            },
+
+
+            {
+                img: "27.jpeg",
+                title: "Twilight in the Highlands",
+                desc: "Twilight in the Highlands portrays a quiet hillside village illuminated by warm lights beneath a dramatic evening sky. The subtle interplay of shadow, architecture, and atmosphere creates a deeply contemplative composition, capturing the peaceful transition from day to night in a timeless rural landscape."
+            },
+
+
+
+
+
+
+            // 👉 ADD MORE UP TO 25 SAME WAY
+
+        ];
+
+
+        // ===== LOGIC (AUTO CREATE CARDS) =====
+        const gallery = document.getElementById("gallery");
+
+        artworks.forEach(item => {
+            gallery.innerHTML += `
+    <a href="detail.html?img=${item.img}&title=${encodeURIComponent(item.title)}&desc=${encodeURIComponent(item.desc)}">
+      
+      <div class="gallery-card">
+
+        <div class="image-wrapper">
+          <img src="${item.img}">
+          <span class="tag">Featured</span>
+        </div>
+
+        <div class="card-content">
+          <h3>${item.title}</h3>
+          <p class="meta">Watercolor on Paper • 2024</p>
+          <p class="desc">${item.desc}</p>
+          <span class="link">View Details</span>
+        </div>
+
+      </div>
+
+    </a>
+  `;
+        });
+
+    </script>
+    <footer>
+        <div class="footer-container">
+
+            <div>
+                <h3>Sudhir Chada</h3>
+                <p>Capturing the Soul of Architecture in Watercolor</p>
+            </div>
+
+            <div class="footerfoot">
+                <h4>Connect</h4>
+                <p>+91 9823056851</p>
+                <a class="instalink" href="https://www.instagram.com/sudhirchada/?utm_source=ig_web_button_share_sheet"
+                    target="_blank">@sudhirchada</a>
+                <p><a class="instalink"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=chadha.sudhir@gmail.com&su=Artwork%20Enquiry&body=Hi%20I%20am%20interested%20in%20your%20artwork"
+                        target="_blank"">
+          chadha.sudhir@gmail.com
+        </a></p>
+        <br>
+        <p class=" cc">© 2026 Sudhir Chada. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
